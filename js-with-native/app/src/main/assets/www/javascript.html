@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<body>
+<div style="position:absolute; top:50%;">
+<input type="text" id="text1" value="" /><input type="button" id="btn" value="传递内容" onclick="javascript:showToast();" /><input type="text" id="text2" value="" />
+</div>
+<!--<script>
+function show()
+{
+ var temp=document.getElementById("text1").value;
+ document.getElementById("text2").value=temp;
+ document.getElementById("text1").value='';
+
+}
+</script>-->
+<script>
+function showToast(toast) {
+
+var toast=document.getElementById("text1").value;
+javascript:javascriptInterface.showToast(toast);
+document.getElementById("text2").value=toast;
+ document.getElementById("text1").value='';
+}
+</script>
+</body>
+</html>
